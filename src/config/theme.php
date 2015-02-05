@@ -59,13 +59,13 @@ return array(
 	|
 	*/
 
-	'containerDir' => array(
+	'containerDir' => [
 		'layout'  => 'layouts',
 		'asset'   => 'assets',
 		'partial' => 'partials',
 		'widget'  => 'widgets',
 		'view'    => 'views'
-	),
+	],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -76,9 +76,9 @@ return array(
 	|
 	*/
 
-	'namespaces' => array(
+	'namespaces' => [
 		'widget' => 'App\Widgets'
- 	),
+ 	],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -90,7 +90,7 @@ return array(
 	|
 	*/
 
-	'events' => array(
+	'events' => [
 
 		// Before all event, this event will effect for global.
 		'before' => function($theme)
@@ -112,7 +112,7 @@ return array(
             // Theme::asset()->serve('backbone');
 		}
 
-	),
+	],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -123,13 +123,13 @@ return array(
 	|
 	*/
 
-	'engines' => array(
+	'engines' => [
 
-		'twig' => array(
+		'twig' => [
 
 		    // This is laravel alias to allow in twig compiler
 		    // The list all of methods is at /app/config/app.php
-		    'allows' => array(
+		    'allows' => [
 		        'Auth',
 		        'Cache',
 		        'Config',
@@ -143,7 +143,7 @@ return array(
 		        'Theme',
 		        'URL',
 		        'Validator'
-		    ),
+		    ],
 
 
 		    // This is laravel alias to allow in twig compiler
@@ -162,8 +162,6 @@ return array(
 
 		        return $twig;
 		    }
-		)
-
-	)
-
+		]
+	]
 );
