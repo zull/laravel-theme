@@ -874,7 +874,7 @@ class Theme {
 			return $this->regions[$region];
 		}
 
-		return $default ? $default : '';
+		return isset($default) ? $default : '';
 	}
 
 	/**
