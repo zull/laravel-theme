@@ -1037,10 +1037,19 @@ class Theme {
 		// Custom directory path.
 		$pathOfView = app('path.base').'/'.implode('/', $segments);
 
-		// Add temporary path with a hint type.
-		$this->view->addNamespace('custom', $pathOfView);
+		//dd($pathOfView);
 
-		return $this->of('custom::'.$view, $args);
+		try
+		{
+			// Add temporary path with a hint type.
+			$this->view->addNamespace('custom', $pathOfView);
+
+			return $this->of('custom::'.$view, $args);
+		}
+		catch (\InvalidArgumentException $e)
+		{
+			throw new \Exception('View '.$pathOfView.' not found.', 1);
+		}
 	}
 
 	/**
