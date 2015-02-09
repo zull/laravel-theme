@@ -1,4 +1,4 @@
-## Theme Management for Laravel
+## Theme Management for Laravel 5
 
 ### For Laravel 4, please use the [v1.x branch](https://github.com/teepluss/laravel-theme/tree/v1.x)!
 
